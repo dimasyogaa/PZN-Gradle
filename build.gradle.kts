@@ -62,3 +62,10 @@ tasks.register("author") {
     }
 }
 
+// Kompilasi semua kode program
+// gradle classes
+
+// Kompilasi dan Menjalankan unit test
+// gradle test
+
+
