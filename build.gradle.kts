@@ -50,3 +50,15 @@ tasks.register("helloyoga") {
         println("Yoga")
     }
 }
+
+// Menggunakan Gradle Properties
+tasks.register("author") {
+
+    // nama harus sama dengan key
+    val author: String by project
+    val email: String by project
+    doLast {
+        println("Author ${author}:${email}")
+    }
+}
+
