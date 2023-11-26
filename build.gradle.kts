@@ -40,3 +40,13 @@ dependencies {
 application (Action {
     mainClassName = "PZN_5_Gradle.AppKt"
 })
+
+// Membuat Task - gradle helloyoga
+tasks.register("helloyoga") {
+    doFirst {
+        println("Hello ")
+    }
+    doLast {
+        println("Yoga")
+    }
+}
