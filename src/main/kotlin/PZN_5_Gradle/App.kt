@@ -3,6 +3,8 @@
  */
 package PZN_5_Gradle
 
+import com.google.gson.Gson
+
 class App {
     val greeting: String
         get() {
@@ -15,4 +17,6 @@ fun main(args: Array<String>) {
 
     // gradle run
     println("Belajar Kotlin")
+
+    val gson = Gson()
 }
