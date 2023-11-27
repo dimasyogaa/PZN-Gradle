@@ -7,15 +7,4 @@
  * in the user manual at https://docs.gradle.org/6.6/userguide/multi_project_builds.html
  */
 
-rootProject.name = "PZN_5_Gradle"
-
-
-// Menambahkan Modul ke project utama
-include("module-model")
-include("module-util")
-
-/*
-lalu reload,
-jika ada error di build gradle masing masing module, maka hapus saja versionnya pada plugin
-lalu tekan shift 2 kali ketikan reload all gradle, kemudian klik.
- */
+rootProject.name = "module-model"

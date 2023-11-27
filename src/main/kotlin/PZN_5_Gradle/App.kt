@@ -4,6 +4,8 @@
 package PZN_5_Gradle
 
 import com.google.gson.Gson
+import module.model.Product
+import module.util.StringUtil
 
 class App {
     val greeting: String
@@ -19,4 +21,7 @@ fun main(args: Array<String>) {
     println("Belajar Kotlin")
 
     val gson = Gson()
+
+    val product = Product("1", "Handphone Ipun")
+    println(StringUtil.toUpper(product.name))
 }

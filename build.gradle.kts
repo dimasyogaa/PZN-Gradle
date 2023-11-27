@@ -6,6 +6,7 @@
 
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin.
+    // versinya harus dideklarasikan sekali di rootnya, sehingga pada module-modulenya hapus aja versionnya
     id("org.jetbrains.kotlin.jvm") version "1.3.72"
 
     // Apply the application plugin to add support for building a CLI application.
@@ -50,6 +51,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
 
     implementation("com.google.code.gson:gson:2.10.1")
+
+    // import module ke dalam dependency agar bisa digunakan di root project
+    implementation(project(":module-model"))
+    implementation(project(":module-util"))
 }
 
 // application {
@@ -93,6 +98,16 @@ tasks.register("author") {
 // gradle distTar (Max, Linux)
 // gradle distZip (Windows)
 // Hasil distribution file bisa kita lihat direktori build/distributions
+
+
+//Membuat Module Baru
+// ● Untuk membuat module baru, di dalam project yang sudah ada, kita hanya tinggal membuat folder
+// baru, lalu buat gradle project baru menggunakan perintah gradle init gunakan tipe library
+// karena library maka tidak bisa menggunakan perintah gradle run
+
+
+// Menjalankan Task untuk Modul
+// gradle namamodule:name-task
 
 
 
