@@ -89,3 +89,10 @@ tasks.register("author") {
 // gradle test
 
 
+// Membuat Distribution File
+// gradle distTar (Max, Linux)
+// gradle distZip (Windows)
+// Hasil distribution file bisa kita lihat direktori build/distributions
+
+
+
